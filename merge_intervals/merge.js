@@ -5,23 +5,17 @@ function mergeIntervals(intervals) {
 
     intervals.sort((a, b) => a[0] - b[0])
 
-    let index = 0
     let result = [intervals[0]]
 
-    while(index < intervals.length) {
-        if (result[result.length - 1][result[result.length - 1].length - 1] >= intervals[index][0]) {
-            if (result[result.length - 1][0] > intervals[index][0]) {
-                result[result.length - 1][0] = intervals[index][0]
-            }
+    for (let interval of intervals) {
+        let prev = result[result.length - 1]
 
-            if (result[result.length - 1][result[result.length - 1].length - 1] < intervals[index][intervals[index].length - 1]) {
-                result[result.length - 1][result[result.length - 1].length - 1] = intervals[index][intervals[index].length - 1]
-            }
+        if (prev[prev.length - 1] >= interval[0]) {
+            prev[0] = Math.min(prev[0], interval[0])
+            prev[prev.length - 1] = Math.max(prev[prev.length - 1], interval[interval.length - 1])
         } else {
-            result.push(intervals[index])
+            result.push(interval)
         }
-
-        ++index
     }
 
     return result
