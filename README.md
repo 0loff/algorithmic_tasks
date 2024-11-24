@@ -144,3 +144,40 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 </details>
 
 ___
+
+### 6. Valid Parentheses (leetcode 20).
+<details closed>
+<summary>Description</summary><br>
+
+Given a string `s` containing just the characters `'('`,` ')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.  
+An input string is valid if:
+1. Open brackets must be closed by the same type of brackets.  
+2. Open brackets must be closed in the correct order.  
+3. Every close bracket has a corresponding open bracket of the same type.  
+<details closed>
+<summary>Examples</summary><br>
+
+**Example 1**
+
+>**Input:** "()"  
+**Output:** true  
+
+**Example 2**
+
+>**Input:** s = "()[]{}"  
+**Output:** true  
+
+**Exmaple 3**
+
+>**Input:** s = "(]"  
+**Output:** false  
+
+**Exmaple 4**
+
+>**Input:** s = "([])"  
+**Output:** true 
+
+</details>
+</details>
+
+___
