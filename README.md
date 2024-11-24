@@ -78,3 +78,40 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 </details>
 
 ___
+
+___
+
+### 4. Regular Expression Matching (leetcode 10).
+<details closed>
+<summary>Description</summary><br>
+
+Given an input string `s` and a pattern `p`, implement regular expression matching with support for `'.'` and `'*'` where:  
+
++ `'.'` Matches any single character.​​​​
++ `'*'` Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+<details closed>
+<summary>Examples</summary><br>
+
+**Example 1**
+
+>**Input:** s = `"aa"`, p = `"a"`  
+**Output:** `false`  
+Explanation: `"a"` does not match the entire string `"aa"`.
+
+**Example 2**
+
+>**Input:** s = `"aa"`, p = `"a*"`  
+**Output:** `true`  
+Explanation: `'*'` means zero or more of the preceding element, `'a'`. Therefore, by repeating `'a'` once, it becomes `"aa"`.  
+
+**Exmaple 3**
+
+>**Input:** s = `"ab"`, p = `".*"`  
+**Output:** `true`  
+Explanation: `".*"` means "zero or more `(*)` of any character `(.)`".
+</details>
+</details>
+
+___
